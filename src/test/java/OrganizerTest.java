@@ -20,9 +20,9 @@ public class OrganizerTest {
   }
 
   @Test
-  public void isCompleted_instantiatesWithTitle_true() {
+  public void isCompleted_instantiatesWithAlbum_true() {
     Organizer myOrganizer = new Organizer("David Bowie", "Hunky Dory");
-    assertEquals("Hunky Dory", myOrganizer.getTitle());
+    assertEquals("Hunky Dory", myOrganizer.getAlbum());
   }
 
   @Test

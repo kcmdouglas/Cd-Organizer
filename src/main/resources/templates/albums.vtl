@@ -1,0 +1,10 @@
+<h1> All albums </h1>
+<ul>
+#foreach ($organizer in $albumsArray)
+  <li><a href="/albums/$organizer.getId()">$organizer.getArtist()</a> | <a href="/albums/$organizer.getId()">$organizer.getAlbum()</a></li>
+#end
+</ul>
+
+<form action="/albums/new">
+    <button type="submit" class="btn btn-primary form-control">Add Another Album</button>
+</form>

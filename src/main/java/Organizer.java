@@ -1,14 +1,14 @@
 import java.util.ArrayList;
 
-public class Organizer {
+public class Organizer{
   private String mArtist;
-  private String mTitle;
+  private String mAlbum;
   private static ArrayList<Organizer> cdObjects = new ArrayList<Organizer>();
   private int mId;
 
-  public Organizer(String artist, String title){
+  public Organizer(String artist, String album){
     mArtist = artist;
-    mTitle = title;
+    mAlbum = album;
     cdObjects.add(this);
     mId = cdObjects.size();
   }
@@ -17,8 +17,8 @@ public class Organizer {
     return mArtist;
   }
 
-  public String getTitle() {
-    return mTitle;
+  public String getAlbum() {
+    return mAlbum;
   }
 
   public static ArrayList<Organizer> all(){
